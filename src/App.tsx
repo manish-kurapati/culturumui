@@ -7,12 +7,12 @@ import ProcessSection from "./components/ProcessSection";
 import VisualJourneySection from "./components/VisualJourneySection";
 import ContactSection from "./components/ContactSection";
 import FooterSection from "./components/FooterSection";
-
-function TileBorder() {
-  return <div className="tile-border" aria-hidden="true" />;
-}
+import AllEventsPage from "./components/AllEventsPage";
+import CreatorsSection from "./components/CreatorsSection";
 
 export default function App() {
+  const isAllEventsPage = new URLSearchParams(window.location.search).get("view") === "events";
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     if (params.get("section") === "about" || window.location.hash === "#about") {
@@ -21,6 +21,10 @@ export default function App() {
       }, 100);
     }
   }, []);
+
+  if (isAllEventsPage) {
+    return <AllEventsPage />;
+  }
 
   return (
     <main>
@@ -31,7 +35,7 @@ export default function App() {
 
         <nav className="nav" aria-label="Main navigation">
           <a href="#about"><span>ABOUT</span><i aria-hidden="true" /></a>
-          <a href="#events"><span>EVENT</span><i aria-hidden="true" /></a>
+          <a href="#events"><span>EVENTS</span><i aria-hidden="true" /></a>
           <a href="#journal"><span>EXPLORE ARTS</span><i aria-hidden="true" /></a>
           <a href="#contact"><span>CONTACT</span><i aria-hidden="true" /></a>
         </nav>
@@ -40,7 +44,7 @@ export default function App() {
         <div className="discipline" aria-label="Where art connects">
           <span className="discipline-line left" aria-hidden="true" />
           <i className="discipline-star" aria-hidden="true" />
-          <p>WHERE ART CONNECTS</p>
+          <p>ROOTED IN CULTURE. ALIVE IN ART.</p>
           <i className="discipline-star" aria-hidden="true" />
           <span className="discipline-line right" aria-hidden="true" />
         </div>
@@ -48,15 +52,15 @@ export default function App() {
 
       <ScrollTileBorder direction="left" speed={0.7} />
 
-      <AboutSection />
+      <AboutSection isCulturumMode />
 
       <EventsSection />
+
+      <CreatorsSection />
 
       <ScrollTileBorder direction="left" speed={0.7} />
 
       <ProcessSection />
-
-      <TileBorder />
 
       <VisualJourneySection />
 

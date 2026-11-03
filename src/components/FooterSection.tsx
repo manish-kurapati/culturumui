@@ -21,11 +21,11 @@ export default function FooterSection() {
         <div className="footer-brand-column">
           <div className="footer-brand-header">
             <h2 className="footer-brand-title">CULTURUM</h2>
-            <p className="footer-brand-tagline">WHERE ART CONNECTS</p>
+            <p className="footer-brand-tagline">ROOTED IN CULTURE. ALIVE IN ART.</p>
           </div>
           <p className="footer-cultural-quote">
-            &ldquo;Celebrating the living pulse of Indian indigenous art, folklore narratives,
-            and contemporary visual storytelling.&rdquo;
+            A meeting place for living traditions, contemporary imagination, and the people who
+            keep both moving forward.
           </p>
           <div className="footer-telugu-blessing">
             <span>కళా బంధం • సంస్కృతి సాధన • జీవకళా వైభవం</span>

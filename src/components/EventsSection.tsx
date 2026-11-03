@@ -24,7 +24,7 @@ export const CULTURUM_EVENTS: CulturumEvent[] = [
     category: "Heritage Masterclasses & Living Craft",
     date: "NOV 15–18, 2026",
     venue: "Hyderabad Cultural Center & Artisan Courtyard",
-    image: "/assets/events/event_kala_utsav.jpg",
+    image: "/assets/events-line-art/kala-utsav.png",
     tagline: "Hands-on Masterclasses with Living Heritage Artisans",
     description: [
       "Kala Utsav is Culturum's flagship annual heritage festival bringing together master craftsmen, indigenous painters, and contemporary creators under one open-air courtyard.",
@@ -47,7 +47,7 @@ export const CULTURUM_EVENTS: CulturumEvent[] = [
     category: "2D Motion & Folklore Storytelling",
     date: "DEC 06–08, 2026",
     venue: "Culturum Studio Residency & Digital Hub",
-    image: "/assets/events/event_drishya_animation.jpg",
+    image: "/assets/events-line-art/drishya-katha.png",
     tagline: "Reimagining Indian Mythology Through Contemporary 2D Animation",
     description: [
       "Drishya Katha is an intensive 3-day animation residency where animators, illustrators, and visual storytellers bridge classical Indian iconography with fluid 2D motion.",
@@ -70,7 +70,7 @@ export const CULTURUM_EVENTS: CulturumEvent[] = [
     category: "Tholu Bommalata Shadow Puppetry",
     date: "JAN 12–14, 2027",
     venue: "Bengaluru Amphitheatre & Pavilion",
-    image: "/assets/events/event_sangam_puppetry.jpg",
+    image: "/assets/events-line-art/sangam-residency.png",
     tagline: "Illuminating Ancient Epics with Living Shadow Masters",
     description: [
       "Sangam Residency honors the sacred shadow theatre tradition of Tholu Bommalata — leather shadow puppetry practiced for centuries across Andhra and Telangana.",
@@ -93,7 +93,7 @@ export const CULTURUM_EVENTS: CulturumEvent[] = [
     category: "Contemporary & Folk Art Fusion",
     date: "FEB 20–28, 2027",
     venue: "National Gallery of Modern Art Pavilion",
-    image: "/assets/events/event_rang_fusion.jpg",
+    image: "/assets/events-line-art/rang-pravah.png",
     tagline: "Where Traditional Craft Meets Modern Visual Design",
     description: [
       "Rang Pravah is Culturum's curated gallery exhibition exploring how ancient artistic sensibilities inform futuristic visual culture.",
@@ -212,11 +212,8 @@ export default function EventsSection() {
           ‹
         </button>
         <div className="heading-title-group">
-          <h2>EVENTS &amp; PROJECTS</h2>
-          <span className="events-subtext">Culturum Creative Gatherings &amp; Residencies</span>
-        </div>
-        <div className="heading-rule">
-          <span />
+          <h2>EVENTS</h2>
+          <span className="events-subtext">Gather, Make, Learn, and Carry the Story Forward</span>
         </div>
         <button
           onClick={() => handleNavClick(1)}
@@ -267,6 +264,12 @@ export default function EventsSection() {
             </article>
           ))}
         </div>
+      </div>
+
+      <div className="events-explore-row">
+        <a href="?view=events" className="events-explore-link">
+          Explore all events <span aria-hidden="true">↗</span>
+        </a>
       </div>
 
       {/* Event Details Lightbox Modal */}

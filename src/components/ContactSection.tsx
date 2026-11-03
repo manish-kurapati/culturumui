@@ -49,10 +49,10 @@ export default function ContactSection() {
 
           <div className="contact-title-group">
             <span className="contact-telugu-kicker">సంప్రదించండి • CONNECT WITH CULTURUM</span>
-            <h2 className="contact-main-heading">CONNECT<br />WITH US !</h2>
+            <h2 className="contact-main-heading">LET&apos;S CREATE<br />TOGETHER</h2>
             <p className="contact-subheading">
-              Whether you are an indigenous master artisan, a 2D animator, or an arts enthusiast
-              eager to support heritage storytelling, our doors and courtyards are always open.
+              Bring us a practice, a question, or the beginning of an idea. We welcome artists,
+              artisans, researchers, collaborators, and anyone who wants to help living culture grow.
             </p>
           </div>
 
@@ -243,7 +243,7 @@ export default function ContactSection() {
               />
               <div className="house-image-caption-strip">
                 <p>
-                  <em>&ldquo;Where tradition breathes in contemporary light.&rdquo;</em>
+                  <em>&ldquo;Old knowledge. New conversations. Shared futures.&rdquo;</em>
                 </p>
                 <span className="telugu-caption">కళా బంధం • జీవకళా వైభవం</span>
               </div>

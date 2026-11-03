@@ -107,12 +107,12 @@ export default function ProcessSection() {
           CHARACTERS WITH<br />A LIVING TRADITION
         </h2>
         <p className="characters-subtitle">
-          From temple mudras and devotional veena strings to twirling ghagras and shadow puppets—each
-          Culturum character is an authentic celebration of India&apos;s living folklore and musical heritage.
+          Every gesture, instrument, costume, and silhouette begins with close observation. These
+          characters translate living traditions into visual stories with care, curiosity, and respect.
         </p>
         <div className="characters-scroll-hint">
           <span className="hint-arrow">↓</span>
-          <span className="hint-text">SCROLL TO WITNESS PARALLAX PROCESSION</span>
+          <span className="hint-text">SCROLL TO FOLLOW THE PROCESSION</span>
           <span className="hint-arrow">↓</span>
         </div>
       </div>
